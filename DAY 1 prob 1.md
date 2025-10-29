@@ -21,5 +21,15 @@ Constraints:
 
 
 
-Answer ::
-
+## Answer :Python:
+class Solution:
+    def getSecondLargest(self, arr):
+        firstL = secondL = -1
+      
+        for num in arr:
+            if num > firstL:
+                secondL = firstL 
+                firstL = num 
+            elif num < firstL and num > secondL:
+                secondL = num ##found 
+        return secondL 
