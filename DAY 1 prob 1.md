@@ -24,8 +24,8 @@ Constraints:
 ## Answer :Python:
 class Solution:
     def getSecondLargest(self, arr):
+	
         firstL = secondL = -1
-      
         for num in arr:
             if num > firstL:
                 secondL = firstL 
@@ -61,10 +61,10 @@ Constraints:
 
 ## answer :python:
 class Solution:
+
 	def pushZerosToEnd(self, arr):
 	    for i in arr[:] :
-            if i == 0:
-                arr.remove(i)
-                arr.append(0)
-        return arr
-    
+	        if i == 0:
+	            arr.remove(i)
+	            arr.append(0)
+	    return arr
